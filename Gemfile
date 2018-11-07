@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails'
-
+gem 'bootsnap', require: false
 
 group :development do
   gem 'sqlite3'
