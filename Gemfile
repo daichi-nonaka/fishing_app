@@ -13,6 +13,9 @@ gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder'
+gem 'bootstrap', '~> 4.1.1'
+gem 'jquery-rails'
+gem 'devise'
 
 group :doc do
   gem 'sdoc', require: false

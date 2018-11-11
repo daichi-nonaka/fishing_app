@@ -58,4 +58,7 @@ FishingApp::Application.configure do
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   #config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+  
+  # mailer setting
+  config.action_mailer.default_url_options = { host: 'https://46f6198c2c064e3889b56d2d3b2a630c.vfs.cloud9.us-east-2.amazonaws.com/'}
 end
