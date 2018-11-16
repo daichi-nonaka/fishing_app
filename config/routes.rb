@@ -1,4 +1,6 @@
 FishingApp::Application.routes.draw do
+  resources :stores
+  resources :dictionaries
   resources :microposts
   devise_for :users
   root 'static_pages#home'
