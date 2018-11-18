@@ -35,6 +35,11 @@
     <%= form.label :notes %>
     <%= form.text_area :notes %>
   </div>
+  
+  <div class="field">
+    <%= form.label :image %><br>
+    <%= form.file_field :image %>
+  </div>
 
   <div class="actions">
     <%= form.submit %>

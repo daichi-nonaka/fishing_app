@@ -16,6 +16,7 @@ gem 'jbuilder'
 gem 'bootstrap', '~> 4.1.1'
 gem 'jquery-rails'
 gem 'devise'
+gem 'carrierwave'
 
 group :doc do
   gem 'sdoc', require: false

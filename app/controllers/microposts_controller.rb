@@ -1,7 +1,7 @@
 class MicropostsController < ApplicationController
   before_action :authenticate_user!, only: [:show, :edit, :update, :destroy]
   before_action :admin_authentication!, only: [:new, :edit, :create, :update, :destroy]
-  before_action :set_micropost, only: [:show, :edit, :update, :destroy]
+  before_action :set_micropost, only: [:show, :edit, :update, :destroy,]
   # GET /microposts
   # GET /microposts.json
   def index
@@ -70,6 +70,6 @@ class MicropostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def micropost_params
-      params.require(:micropost).permit(:title, :story)
+      params.require(:micropost).permit(:title, :story, :image)
     end
 end
