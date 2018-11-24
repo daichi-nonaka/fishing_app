@@ -10,11 +10,22 @@
   </head>
 
   <body>
-     <header class="navbar navbar-fixed-top navbar-inverse">
-      <div class="container">
-        <%= link_to "fishing app", root_path, id: "logo" %>
-        <nav>
-          <ul class="nav navbar-nav navbar-right">
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="container">
+          <div class="masthead clearfix">
+            <div class="container inner">
+              <h3 class="masthead-brand">釣り情報</h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li class="active"><%= link_to "記事", microposts_path %></li>
+                  <li class="active"><%= link_to "魚図鑑", dictionaries_path %></li>
+                  <li class="active"><%= link_to "釣具店", stores_path %></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <ul class="nav navbar-nav navbar-right" style="text-align: right; list-style: none;">
             <li><%= link_to "Home",    root_path %></li>
             <li><%= link_to "help",    help_path %></li>
             <% if current_user %>
@@ -23,14 +34,10 @@
               <li><%= link_to "log in", new_user_session_path %></li>
             <% end %>
           </ul>
-        </nav>
+          <%= yield %>
+        </div>
       </div>
-    </header>
-    
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    
-    <%= yield %>
+    </div>
     
   </body>
 </html>

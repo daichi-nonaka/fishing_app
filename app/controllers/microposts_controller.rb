@@ -1,6 +1,6 @@
 class MicropostsController < ApplicationController
   before_action :authenticate_user!, only: [:show, :edit, :update, :destroy]
-  before_action :admin_authentication!, only: [:new, :edit, :create, :update, :destroy]
+  before_action :admin_authentication!, only: [:new, :edit, :create, :update, :destroy, :image]
   before_action :set_micropost, only: [:show, :edit, :update, :destroy,]
   # GET /microposts
   # GET /microposts.json
