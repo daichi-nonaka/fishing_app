@@ -1,5 +1,5 @@
 class StoresController < ApplicationController
-  before_action :authenticate_user!, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, only: [:show]
   before_action :admin_authentication!, only: [:new, :edit, :create, :update, :destroy, :image]
   before_action :set_store, only: [:show, :edit, :update, :destroy]
 

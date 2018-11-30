@@ -1,13 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @dictionary.name %>
+  <strong>名称:</strong>
+  <a class="text-info"><%= @dictionary.name %></a>
 </p>
 
 <p>
-  <strong>Notes:</strong>
-  <%= @dictionary.notes %>
+  <strong>詳細:</strong>
+  <a class="text-info"><%= @dictionary.notes %></a>
 </p>
 
 <%= link_to 'Edit', edit_dictionary_path(@dictionary) %> |

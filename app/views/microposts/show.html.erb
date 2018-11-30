@@ -1,14 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
-  <%= @micropost.title %>
+  <strong>テーマ:</strong>
+  <a class="text-info"><%= @micropost.title %></a>
 </p>
 
 <p>
-  <strong>Story:</strong>
-  <%= @micropost.story %>
+  <strong>ストーリー:</strong>
+  <a class="text-info"><%= @micropost.story %></a>
 </p>
-
 <%= link_to 'Edit', edit_micropost_path(@micropost) %> |
 <%= link_to 'Back', microposts_path %>

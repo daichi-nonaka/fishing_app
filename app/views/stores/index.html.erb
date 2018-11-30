@@ -9,21 +9,20 @@
       <th>営業時間</th>
       <th>住所</th>
       <th>定休日</th>
-      <th>Notes</th>
+      <th>備考欄</th>
       <th colspan="3"></th>
     </tr>
   </thead>
 
   <tbody>
     <% @stores.each do |store| %>
-      <tr>
+      <tr class="text-info">
         <td><%= store.name %></td>
         <td><%= store.open_time %></td>
         <td><%= store.address %></td>
         <td><%= store.closing_day %></td>
         <td><%= store.notes %></td>
         <td><%= link_to 'Show', store %></td>
-        <td><%= link_to 'Edit', edit_store_path(store) %></td>
         <td><%= link_to 'Destroy', store, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>

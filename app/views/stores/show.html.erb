@@ -1,28 +1,28 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @store.name %>
+  <strong>店舗名:</strong>
+  <a class="text-info"><%= @store.name %></a>
 </p>
 
 <p>
-  <strong>Open time:</strong>
-  <%= @store.open_time %>
+  <strong>営業時間:</strong>
+  <a class="text-info"><%= @store.open_time %></a>
 </p>
 
 <p>
-  <strong>Address:</strong>
-  <%= @store.address %>
+  <strong>住所:</strong>
+  <a class="text-info"><%= @store.address %></a>
 </p>
 
 <p>
-  <strong>Closing day:</strong>
-  <%= @store.closing_day %>
+  <strong>定休日:</strong>
+  <a class="text-info"><%= @store.closing_day %></a>
 </p>
 
 <p>
-  <strong>Notes:</strong>
-  <%= @store.notes %>
+  <strong>備考欄:</strong>
+  <a class="text-info"><%= @store.notes %></a>
 </p>
 
 <%= link_to 'Edit', edit_store_path(@store) %> |
