@@ -23,7 +23,8 @@
         <td><%= store.closing_day %></td>
         <td><%= store.notes %></td>
         <td><%= link_to 'Show', store %></td>
-        <td><%= link_to 'Destroy', store, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Edit',edit_store_path(store) if current_user&.admin? %></td>
+        <td><%= link_to 'Destroy', store, method: :delete, data: { confirm: 'Are you sure?' } if current_user&.admin? %></td>
       </tr>
     <% end %>
   </tbody>
@@ -31,4 +32,4 @@
 
 <br>
 
-<%= link_to 'New Store', new_store_path %>
+<%= link_to 'New Store', new_store_path if current_user&.admin? %>

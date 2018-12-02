@@ -41,7 +41,10 @@ body {
 .site-wrapper {
   display: table;
   width: 100%;
-  background-color: #333;
+  background: image-url("fishing_image1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100%;
   /*min-height: 100%;*/
 }
@@ -52,6 +55,13 @@ body {
 .cover-container {
   margin-right: auto;
   margin-left: auto;
+}
+.background-container {
+  background-color: black;
+}
+
+.navbar-nav li {
+  padding-right: 10px;
 }
 
 /* Padding for spacing */

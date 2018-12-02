@@ -10,5 +10,10 @@
   <a class="text-info"><%= @dictionary.notes %></a>
 </p>
 
+<p>
+  <strong>画像:</strong>
+  <%= image_tag(@dictionary.image.to_s, size: "100x100") %>
+</p>
+
 <%= link_to 'Edit', edit_dictionary_path(@dictionary) %> |
 <%= link_to 'Back', dictionaries_path %>

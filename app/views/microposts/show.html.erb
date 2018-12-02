@@ -9,5 +9,10 @@
   <strong>ストーリー:</strong>
   <a class="text-info"><%= @micropost.story %></a>
 </p>
+
+<p>
+  <strong>画像:</strong>
+  <%= image_tag(@micropost.image.to_s) %>
+</p>
 <%= link_to 'Edit', edit_micropost_path(@micropost) %> |
 <%= link_to 'Back', microposts_path %>
